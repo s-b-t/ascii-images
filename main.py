@@ -25,7 +25,7 @@ def displayWelcomeMessage():
     animateMessage(infoText, iterations)
 
 def displayByeMessage():
-    byeText = "Thank you for using the " + boldText('B33FWare ASCII Text2Art Converter') + "." + " Goodbye!"
+    byeText = "Thank you for using the " + boldText('B33FWare Image2ASCII Converter') + "." + " Goodbye!"
     iterations = 1
     animateMessage(byeText, iterations)
 
@@ -97,7 +97,7 @@ def convertImageToAscii(imagePath, outputWidth, outputHeight):
     try:
         image = Image.open(imagePath)
     except Exception as e:
-        print(f"Unable to open image file {imagePath}! {e}")
+        print("Unable to open image file " + boldText(f'{imagePath}! ') + italicText(f'{e}\n'))
         return
 
     image = resizeImage(image, outputWidth)
