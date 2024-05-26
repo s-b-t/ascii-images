@@ -87,21 +87,24 @@ def pixelsToAscii(image):
         asciiStr += ASCII_CHARS[pixel * len(ASCII_CHARS) // 256]
     return asciiStr
 
-# Centers the ASCII Image to the terminal
+# Centers the ASCII Image to the terminal depending on width and height
 def centerAsciiArt(asciiArt, width, height):
     lines = asciiArt.split("\n")
     maxLineLength = max(len(line) for line in lines)
     
+    # If the maximum line length is less than the width, center the lines according to width, otherwise the lines don't need to be centered
     if maxLineLength < width:
         centeredLines = [line.center(width) for line in lines]
     else:
         centeredLines = lines
     
+    # If the length of the centered lines are less than the height, adjust the padding on top and bottom according to the height and width
     if len(centeredLines) < height:
         topPadding = (height - len(centeredLines)) // 2
         bottomPadding = height - len(centeredLines) - topPadding
         centeredLines = [' ' * width] * topPadding + centeredLines + [' ' * width] * bottomPadding
     
+    # Centered ASCII art is the result of the lines joining and centering themselves
     centeredAsciiArt = "\n".join(centeredLines)
     return centeredAsciiArt
 
@@ -113,14 +116,17 @@ def convertImageToAscii(imagePath, outputWidth, outputHeight):
         print("Unable to open image file " + boldText(f'{imagePath}! ') + italicText(f'{e}\n'))
         return
 
+    # Redefines image by resizing and grayscaling
     image = resizeImage(image, outputWidth)
     image = grayify(image)
 
+    # Defines the string of characters that visually represent the image, defines width, defines the string length, and joins the image together by looping through each character in the string 
     asciiStr = pixelsToAscii(image)
     imgWidth = image.width
     asciiStrLength = len(asciiStr)
     asciiImg = "\n".join([asciiStr[index:index + imgWidth] for index in range(0, asciiStrLength, imgWidth)])
 
+    # Centers the image according to outputWidth, outputHeight, and the string length of the ASCII characters that visually represent the image
     asciiImg = centerAsciiArt(asciiImg, outputWidth, outputHeight)
 
     # Prints the ASCII image after grayscale, centering, width, height, and string of ASCII characters that visually represent the image are determined
