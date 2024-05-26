@@ -1,8 +1,62 @@
 from PIL import Image
-import os
+import os, time, sys
 
 # More detailed ASCII characters used to build the output text
 ASCII_CHARS = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,\"^`'. "[::-1]
+
+def animateMessage(infoText, iterations):
+    for _ in range(iterations):
+        for char in infoText:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(0.025)
+
+# Boldens text using ANSI escape characters when function is called
+def boldText(text):
+    return "\033[1m" + text + "\033[0m"
+
+# Italicizes text using ANSI escape characters when function is called
+def italicText(text):
+    return "\033[3m" + text + "\033[0m"
+
+def displayWelcomeMessage():
+    infoText = "\nWelcome to the " + boldText('B33FWare Image2ASCII Converter') + "." + "\nAuthor: Steven Blake Tobias\n" + boldText("PSSST! ") + "This program runs best on full screen.\n" + "More info at " + boldText('www.github.com/s-b-t\n\n')
+    iterations = 1
+    animateMessage(infoText, iterations)
+
+def displayByeMessage():
+    byeText = "Thank you for using the " + boldText('B33FWare ASCII Text2Art Converter') + "." + " Goodbye!"
+    iterations = 1
+    animateMessage(byeText, iterations)
+
+def main():
+    displayWelcomeMessage()
+
+    # Allows user to continue with the program as intended
+    input('Press ' + boldText("[Enter]") + ' or ' + boldText("[Return]") + ' to continue...\n')
+
+    while True:
+        # Allows user to enter any image file they wish, or QUIT out of the program
+        imagePath = input('Enter or paste the path of the image file you would like to convert to ASCII art ' + boldText('(to Quit, type QUIT)') + ": ")
+        print()
+
+        # If user does not enter a file into the prompt, alert the user and keep displaying alert message until they enter valid input
+        if not imagePath:
+            print('You didn\'t provide an image file!')
+            print()
+            continue
+
+        if imagePath == 'QUIT':
+            displayByeMessage()
+            print('\n')
+            sys.exit()
+
+        # Terminal size
+        terminalSize = os.get_terminal_size()
+        outputWidth = terminalSize.columns
+        outputHeight = terminalSize.lines - 1  # Leave one line for the prompt
+
+        convertImageToAscii(imagePath, outputWidth, outputHeight)
 
 def resizeImage(image, newWidth):
     width, height = image.size
@@ -43,7 +97,7 @@ def convertImageToAscii(imagePath, outputWidth, outputHeight):
     try:
         image = Image.open(imagePath)
     except Exception as e:
-        print(f"Unable to open image file {imagePath}. {e}")
+        print(f"Unable to open image file {imagePath}! {e}")
         return
 
     image = resizeImage(image, outputWidth)
@@ -59,15 +113,5 @@ def convertImageToAscii(imagePath, outputWidth, outputHeight):
     print(asciiImg)
     return asciiImg
 
-# Get user input for the image path
-imagePath = input("Enter the path of your image file: ")
-
-# Terminal size
-terminalSize = os.get_terminalSize()
-outputWidth = terminalSize.columns
-outputHeight = terminalSize.lines - 1  # Leave one line for the prompt
-
-convertImageToAscii(imagePath, outputWidth, outputHeight)
-
-
-
+if __name__ == "__main__":
+    main()
