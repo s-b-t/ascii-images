@@ -32,7 +32,6 @@ def displayByeMessage():
     iterations = 1
     animateMessage(byeText, iterations)
 
-
 def main():
     # Welcome Message is called and the function displays it
     displayWelcomeMessage()
