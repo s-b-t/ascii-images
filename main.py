@@ -4,70 +4,70 @@ import os
 # More detailed ASCII characters used to build the output text
 ASCII_CHARS = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,\"^`'. "[::-1]
 
-def resize_image(image, new_width):
+def resizeImage(image, newWidth):
     width, height = image.size
-    aspect_ratio = height / width / 1.65  # Adjust aspect ratio for terminal display
-    new_height = int(aspect_ratio * new_width)
-    resized_image = image.resize((new_width, new_height))
-    return resized_image
+    aspectRatio = height / width / 1.65  # Adjust aspect ratio for terminal display
+    newHeight = int(aspectRatio * newWidth)
+    resizedImage = image.resize((newWidth, newHeight))
+    return resizedImage
 
 def grayify(image):
-    grayscale_image = image.convert("L")
-    return grayscale_image
+    grayscaleImage = image.convert("L")
+    return grayscaleImage
 
-def pixels_to_ascii(image):
+def pixelsToAscii(image):
     pixels = image.getdata()
-    ascii_str = ""
+    asciiStr = ""
     for pixel in pixels:
-        ascii_str += ASCII_CHARS[pixel * len(ASCII_CHARS) // 256]
-    return ascii_str
+        asciiStr += ASCII_CHARS[pixel * len(ASCII_CHARS) // 256]
+    return asciiStr
 
-def center_ascii_art(ascii_art, width, height):
-    lines = ascii_art.split("\n")
-    max_line_length = max(len(line) for line in lines)
+def centerAsciiArt(asciiArt, width, height):
+    lines = asciiArt.split("\n")
+    maxLineLength = max(len(line) for line in lines)
     
-    if max_line_length < width:
-        centered_lines = [line.center(width) for line in lines]
+    if maxLineLength < width:
+        centeredLines = [line.center(width) for line in lines]
     else:
-        centered_lines = lines
+        centeredLines = lines
     
-    if len(centered_lines) < height:
-        top_padding = (height - len(centered_lines)) // 2
-        bottom_padding = height - len(centered_lines) - top_padding
-        centered_lines = [' ' * width] * top_padding + centered_lines + [' ' * width] * bottom_padding
+    if len(centeredLines) < height:
+        topPadding = (height - len(centeredLines)) // 2
+        bottomPadding = height - len(centeredLines) - topPadding
+        centeredLines = [' ' * width] * topPadding + centeredLines + [' ' * width] * bottomPadding
     
-    centered_ascii_art = "\n".join(centered_lines)
-    return centered_ascii_art
+    centeredAsciiArt = "\n".join(centeredLines)
+    return centeredAsciiArt
 
-def convert_image_to_ascii(image_path, output_width, output_height):
+def convertImageToAscii(imagePath, outputWidth, outputHeight):
     try:
-        image = Image.open(image_path)
+        image = Image.open(imagePath)
     except Exception as e:
-        print(f"Unable to open image file {image_path}. {e}")
+        print(f"Unable to open image file {imagePath}. {e}")
         return
 
-    image = resize_image(image, output_width)
+    image = resizeImage(image, outputWidth)
     image = grayify(image)
 
-    ascii_str = pixels_to_ascii(image)
-    img_width = image.width
-    ascii_str_len = len(ascii_str)
-    ascii_img = "\n".join([ascii_str[index:index + img_width] for index in range(0, ascii_str_len, img_width)])
+    asciiStr = pixelsToAscii(image)
+    imgWidth = image.width
+    asciiStr_len = len(asciiStr)
+    asciiImg = "\n".join([asciiStr[index:index + imgWidth] for index in range(0, asciiStr_len, imgWidth)])
 
-    ascii_img = center_ascii_art(ascii_img, output_width, output_height)
+    asciiImg = centerAsciiArt(asciiImg, outputWidth, outputHeight)
 
-    print(ascii_img)
-    return ascii_img
+    print(asciiImg)
+    return asciiImg
 
 # Get user input for the image path
-image_path = input("Enter the path of your image file: ")
+imagePath = input("Enter the path of your image file: ")
 
 # Terminal size
-terminal_size = os.get_terminal_size()
-output_width = terminal_size.columns
-output_height = terminal_size.lines - 1  # Leave one line for the prompt
+terminalSize = os.get_terminalSize()
+outputWidth = terminalSize.columns
+outputHeight = terminalSize.lines - 1  # Leave one line for the prompt
 
-convert_image_to_ascii(image_path, output_width, output_height)
+convertImageToAscii(imagePath, outputWidth, outputHeight)
 
 
 
