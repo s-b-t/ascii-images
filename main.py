@@ -34,6 +34,7 @@ def displayByeMessage():
 
 
 def main():
+    # Welcome Message is called and the function displays it
     displayWelcomeMessage()
 
     # Allows user to continue with the program as intended after the infoText displays
@@ -73,11 +74,12 @@ def resizeImage(image, newWidth):
     resizedImage = image.resize((newWidth, newHeight))
     return resizedImage
 
-
+# Instance of PIL Image, converts the image to grayscale as a pre-processing step to process the image ("L" being Luminance), getting each pixel to represent a single value. Reduces the color information to shades of gray, mapping the image to a single channel of intensity which make the ASCII translation of the image much easier and more crisp
 def grayify(image):
     grayscaleImage = image.convert("L")
     return grayscaleImage
 
+# Converts and loops through each pixel of the image in grayscale to then recreate each pixel with ASCII characters based on each pixels intensity, asciiStr is the string of characters that visually represent the image
 def pixelsToAscii(image):
     pixels = image.getdata()
     asciiStr = ""
@@ -85,6 +87,7 @@ def pixelsToAscii(image):
         asciiStr += ASCII_CHARS[pixel * len(ASCII_CHARS) // 256]
     return asciiStr
 
+# Centers the ASCII Image to the terminal
 def centerAsciiArt(asciiArt, width, height):
     lines = asciiArt.split("\n")
     maxLineLength = max(len(line) for line in lines)
@@ -102,6 +105,7 @@ def centerAsciiArt(asciiArt, width, height):
     centeredAsciiArt = "\n".join(centeredLines)
     return centeredAsciiArt
 
+# Tries to convert the image into ASCII as long as there is a valid file path entered, if not, alerts the user that the file path they entered does not exist
 def convertImageToAscii(imagePath, outputWidth, outputHeight):
     try:
         image = Image.open(imagePath)
@@ -119,6 +123,7 @@ def convertImageToAscii(imagePath, outputWidth, outputHeight):
 
     asciiImg = centerAsciiArt(asciiImg, outputWidth, outputHeight)
 
+    # Prints the ASCII image after grayscale, centering, width, height, and string of ASCII characters that visually represent the image are determined
     print(asciiImg)
     return asciiImg
 
