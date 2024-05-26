@@ -105,8 +105,8 @@ def convertImageToAscii(imagePath, outputWidth, outputHeight):
 
     asciiStr = pixelsToAscii(image)
     imgWidth = image.width
-    asciiStr_len = len(asciiStr)
-    asciiImg = "\n".join([asciiStr[index:index + imgWidth] for index in range(0, asciiStr_len, imgWidth)])
+    asciiStrLength = len(asciiStr)
+    asciiImg = "\n".join([asciiStr[index:index + imgWidth] for index in range(0, asciiStrLength, imgWidth)])
 
     asciiImg = centerAsciiArt(asciiImg, outputWidth, outputHeight)
 
