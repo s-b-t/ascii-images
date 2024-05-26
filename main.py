@@ -53,7 +53,7 @@ def main():
 
         # If user does not enter a file into the prompt, alert the user and keep displaying alert message until they enter valid input
         if not imagePath:
-            print('You didn\'t provide an image file!')
+            print(boldText('You didn\'t provide an image path!'))
             print()
             continue
 
@@ -113,7 +113,7 @@ def convertImageToAscii(imagePath, outputWidth, outputHeight):
     try:
         image = Image.open(imagePath)
     except Exception as e:
-        print("Unable to open image file " + boldText(f'{imagePath}! ') + italicText(f'{e}\n'))
+        print("Unable to retrieve the image path you entered! --> " + italicText(boldText(f'{imagePath}\n No such file or directory exist!\n')))
         return
 
     # Redefines image by resizing and grayscaling
@@ -130,7 +130,7 @@ def convertImageToAscii(imagePath, outputWidth, outputHeight):
     asciiImg = centerAsciiArt(asciiImg, outputWidth, outputHeight)
 
     # Prints the ASCII image after grayscale, centering, width, height, and string of ASCII characters that visually represent the image are determined
-    print(asciiImg)
+    print(asciiImg + "\n")
     return asciiImg
 
 if __name__ == "__main__":
