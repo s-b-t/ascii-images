@@ -23,7 +23,7 @@ After you've received the greeting message/header, enter whatever image path you
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Important Details About Using This Program:
 
--- The image being generated HAS to be located in the main project folder for this program. In other words, you cannot just simply type some random path name or grab another path name from 'Pictures', 'Documents', or even the Internet and hope an image will generate. I will eventually implement the user being able to choose from any path off their computer or potentially allowing image URLs from the internet.
+-- The image being generated HAS to be located in the main project folder for this program. In other words, you cannot just simply type some random image path name or grab another image path name from 'Pictures', 'Documents', or even the Internet and hope the image will generate. I will eventually implement the user being able to choose from any image path off their computer or potentially allowing image URLs from the internet.
 
 -- 'Copy Relative Path' or 'Copy Path' and pasting the image path name directly from your code editor into the prompt is the easiest method at the moment. This method assumes that you have already set up an images folder and have images in the folder that you would like to use. I've set up folders already for you to drop images into, titled 'user-public' and 'user-images' with a test image titled 'space-robot1.PNG' inside of it. Use those for now, or rename them to your liking.
 
