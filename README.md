@@ -2,15 +2,15 @@
 
 *Please Note: This program is still in its BETA/WIP stage.*
 
-First, go to your terminal and navigate to a folder where you can ```mkdir``` a name you think is suitable to save for this program.
+First, go to your terminal and navigate (using 'list' ```ls``` and 'change directory' ```cd``` commands) to a suitable directory where you can save this program to.
 
 When you're there, ```mkdir``` your folder name -- ```mkdir ascii-images``` is a suitable example.
 
 Then, install Pillow right to the ```ascii-images``` (or whatever name you choose) project folder. To do this, type ```pip install pillow``` and press Enter.
 
-```PIL``` aka ```pillow``` is used to assist the program in generating images to ASCII.
+```PIL``` aka ```pillow``` is used to assist the program in generating images to ASCII characters.
 
-Once you've verified the ```pillow``` packages installing and finishing, type and enter the following command to your ```ascii-images``` project folder:
+Once you've verified the ```pillow``` packages have finished installing, type and enter the following command to your ```ascii-images``` project folder:
   
   Windows: ```python main.py```
   
