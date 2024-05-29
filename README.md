@@ -20,4 +20,13 @@ Once you've verified the ```pillow``` packages have finished installing, type an
 
 After you've received the greeting message/header, enter whatever image path you want and watch the magic happen!
 
-*Note:*  When you're given the option to save to a text (```.txt```) file of the art after generating, just know that I defaulted the program to save your file as a ```.txt``` file simply because ASCII is generated in text. There's other text file extensions you can technically use, but not right now in the current version of this program. I will implement that feature eventually, but for now a ```.txt``` file serves its purpose perfectly fine.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Important Details About Using This Program:
+
+-- The image being generated HAS to be located on your computer. The program only accepts image paths that are located in a directory. In other words, you cannot just simply type some random path name and hope an image will generate. Copying and pasting the image path name is by far the easiest method.
+
+-- To generate the BEST possible "resolution" of your text in the form of the image that you want, please feel free to change the font size of your terminal located in your terminal settings. The smaller the font, the more detail you will be shown per image that is generated.
+
+-- Ideally, you should also save a public/images folder to this project to make things easier. Then, you can drag and drop multiple images from another folder into this one. When the program prompts you to enter the image path to generate into ASCII art, you can then 'Copy Relative Path' right from your public/images folder and paste it into the prompt. This will also allow you to have the image files you may have liked using, right in your project. You can of course, just delete the ones that you may not like and that way your project always stores the images you liked generating into ASCII.
+
+-- When you're given the option to save to a text (```.txt```) file of the art after generating, just know that I defaulted the program to save your file as a ```.txt``` file simply because ASCII is generated in text and characters. Technically, there's other text file extensions you can use, but not right now in the current version of this program. I will implement that feature eventually, but for now a ```.txt``` file serves its purpose perfectly fine.
