@@ -2,7 +2,7 @@
 
 *This program is still in its BETA/WIP stage. I will be updating more functionality and features continually.*
 
-This program is meant to showcase how creative you can be right in your terminal. Each pixel of the user's desired image directly corresponds to an ASCII character and the program is designed to print out the exact representation of the desired image in ASCII characters.
+This program is meant to showcase how creative you can be right in your terminal. In the logic of the program, each pixel of the user's desired image directly corresponds to an ASCII character and is designed to map, scale, grayscale, and print the exact ASCII representation of the desired image to the user's terminal.
 
 First, go to your terminal and navigate (using 'list' ```ls```, 'change directory' ```cd```, and 'back one directory' ```cd ..``` commands) to a suitable directory where you can save this program to.
 
