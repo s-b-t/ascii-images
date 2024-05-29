@@ -8,7 +8,7 @@ First, go to your terminal and navigate (using 'list' ```ls```, 'change director
 
 When you're there, ```mkdir``` your folder name -- ```mkdir ascii-images``` is a suitable example.
 
-While still in your terminal and the ```ascii-images``` folder still being present on your command line, install Pillow. To do this, type ```pip install pillow``` and press Enter.
+While still in your terminal and the ```ascii-images``` folder being present on your command line, install Pillow. To do this, type ```pip install pillow``` and press Enter.
 
 ```PIL``` aka ```pillow``` is used to assist the program in generating images to ASCII characters.
 
