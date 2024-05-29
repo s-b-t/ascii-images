@@ -18,7 +18,7 @@ Once you've verified the ```pillow``` packages have finished installing, type an
   
   MacOS: ```python3 main.py```
 
-After you've received the greeting message/header, enter whatever image path you want and watch the magic happen!
+After you've received the greeting message/header, enter whatever image path you want (as long as it's in your project) and watch the magic happen!
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Important Details About Using This Program:
