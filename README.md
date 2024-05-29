@@ -27,7 +27,7 @@ After you've received the greeting message/header, enter whatever image path you
 
 -- 'Copy Relative Path' or 'Copy Path' and pasting the image path name directly from your code editor into the prompt is the easiest method at the moment. This method assumes that you have already set up an images folder and have images in the folder that you would like to use. I've set up folders already for you to drop images into, titled 'user-public' and 'user-images' with a test image titled 'space-robot1.PNG' inside of it. Use those for now, or rename them to your liking.
 
--- If you're going to import just the Python script, make your own images folder in the project. I know this isn't perfectly ideal, but this will also allow you to have the image files you may love using, right in your project. You can of course, just delete the ones you may not like.
+-- If you're going to import just the Python script, make your own images folder in the project folder. I know this isn't perfectly ideal, but this will also allow you to have the image files you may love using, right in your project. You can of course, just delete the ones you may not like.
 
 -- To generate the BEST possible "resolution" of your text in the form of the image that you want, please reduce your terminal font size located in your terminal settings. The smaller the font, the more detail you will be shown per image that is generated. When you start playing around with smaller font sizes, you instantly see how much detail is missing from the image. Remember, the ASCII characters directly correlate to each pixel in the image so if your font size is larger, you are allowing the program to give you less detail than it actually can.
 
