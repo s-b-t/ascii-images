@@ -23,7 +23,11 @@ After you've received the greeting message/header, enter whatever image path you
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Important Details About Using This Program:
 
--- The image being generated HAS to be located in the project folder for this program. In other words, you cannot just simply type some random path name or grab another path name from 'Pictures', 'Documents' or even the Internet and hope an image will generate. 'Copying Relative Path' and pasting the image path name directly from your code editor into the prompt is the easiest method at the moment. I've set up folders already for you to drop images into, titled 'user-public' and 'user-images' with a test image titled 'space-robot1.PNG' inside of it. Use those for now, or rename them to your liking. If you're going to import just the Python script, then make your own images folder in the project. This will also allow you to have the image files you may have liked using, right in your project. You can of course, just delete the ones that you may not like.
+-- The image being generated HAS to be located in the project folder for this program. In other words, you cannot just simply type some random path name or grab another path name from 'Pictures', 'Documents' or even the Internet and hope an image will generate. 
+
+-- 'Copy Relative Path' or 'Copy Path' and pasting the image path name directly from your code editor into the prompt is the easiest method at the moment. This method assumes that you have already set up an images folder and have images in the folder that you would like to use. I've set up folders already for you to drop images into, titled 'user-public' and 'user-images' with a test image titled 'space-robot1.PNG' inside of it. Use those for now, or rename them to your liking.
+
+-- If you're going to import just the Python script, then make your own images folder in the project. This will also allow you to have the image files you may have liked using, right in your project. You can of course, just delete the ones you may not like.
 
 -- To generate the BEST possible "resolution" of your text in the form of the image that you want, please feel free to change the font size of your terminal located in your terminal settings. The smaller the font, the more detail you will be shown per image that is generated.
 
