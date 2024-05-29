@@ -2,7 +2,7 @@
 
 *Please Note: This program is still in its BETA/WIP stage.*
 
-This program is meant showcase how creative you can be right in your terminal. It converts any image located in your project into ASCII art.
+This program is meant to showcase how creative you can be right in your terminal. Each pixel of the user's desired image directly corresponds to an ASCII character and the program is designed to print out the exact representation of the desired image in ASCII characters.
 
 First, go to your terminal and navigate (using 'list' ```ls```, 'change directory' ```cd```, and 'back one directory' ```cd ..``` commands) to a suitable directory where you can save this program to.
 
@@ -18,7 +18,7 @@ Once you've verified the ```pillow``` packages have finished installing, type an
   
   MacOS: ```python3 main.py```
 
-After you've received the greeting message/header, enter whatever image path you want (as long as it's in your project) and watch the magic happen!
+After you've received the greeting message/header, enter whatever image path you want (as long as they're located in your project) and watch the magic happen!
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Important Details About Using This Program:
