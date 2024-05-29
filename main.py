@@ -1,7 +1,7 @@
 from PIL import Image
 import os, time, sys
 
-# More detailed ASCII characters used to build the output text
+# More detailed ASCII characters used to build the output ASCII image
 ASCII_CHARS = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,\"^`'. "[::-1]
 
 # Boldens text using ANSI escape characters when function is called
@@ -28,37 +28,41 @@ def displayWelcomeMessage():
 
 # Function to display the content of the Good Bye message when the user opts to QUIT (called later in the logic for if the user QUITs)
 def displayByeMessage():
-    byeText = "Thank you for using the " + boldText('B33FWare Image2ASCII Converter') + "." + " Goodbye!"
+    byeText = "Thank you for using the " + boldText('B33FWare Image2ASCII Converter') + ". Goodbye!"
     iterations = 1
     animateMessage(byeText, iterations)
 
+# Defines the function for saving the ASCII image to a text file 
 def saveAsciiToTextFile(asciiImg):
     while True:
+        # Allows user to input the file path name they wish to be saved
         filePath = input('Enter the file name for your art to be saved under: ')
     
+        # If the filePath is empty, the program keeps asking the user to enter something
         if filePath == '':
             print()
-            print(boldText('You didn\'t provide a file name!'))
+            print(boldText('You didn\'t provide a file name! Please provide one.'))
             print()
             # Asks for the file name again
             continue
         
+        # If the filePath does not end with '.txt', the program appends '.txt' to the end of the file (defaults the file to be saved as a text file)
         if not filePath.endswith('.txt'):
             filePath += '.txt'
             
+        # Tries to write a valid text file to be saved unless there is an error. Does not allow the file to be saved and alerts the user/notifies the system error they are encountering
         try:
             with open(filePath, 'w') as file:
                 file.write(asciiImg)
                 print()
-                print("Art successfully saved to " + boldText(f'{filePath}'))
-                # print()  
+                print("Art successfully saved to " + boldText(f'{filePath}')) 
                 # Exits the loop after successfully saving the file
                 break
         except Exception as e:
             print("Error saving art to file: " + boldText(f'{e}'))
             print(boldText("Please try again with a valid file name."))
 
-# Defines the images new height and width to be set proportionally to terminal size while accounting for the fact that terminal characters are generally 1.65 times taller than they are wide.
+# Defines the images new height and width to be set proportionally to terminal size while accounting for the fact that terminal characters are generally 1.65 times taller than they are wide
 def resizeImage(image, newWidth):
     width, height = image.size
     aspectRatio = height / width / 1.65 
@@ -113,7 +117,7 @@ def convertImageToAscii(imagePath, outputWidth, outputHeight):
     image = resizeImage(image, outputWidth)
     image = grayify(image)
 
-# Defines the string of characters that visually represent the image, defines width, defines the string length, and joins the image together by looping through each character in the string 
+# Defines the string of characters that visually represent the image, defines width, defines the string length, and defines the image by joining the image together by each character in the ASCII string defined on Line 5 and how asciiStr is being used from Line 83
     asciiStr = pixelsToAscii(image)
     imgWidth = image.width
     asciiStrLength = len(asciiStr)
@@ -133,6 +137,7 @@ def main():
     # Allows user to continue with the program as intended after the infoText displays
     input('Press ' + boldText("[Enter]") + ' or ' + boldText("[Return]") + ' to continue...\n')
 
+    # While all of the conditions underneath are true... Give the user more options and keep looping through those options until each condition is satisfied
     while True:
         # Allows user input to enter any image file they wish, or QUIT out of the program
         imagePath = input('Enter or paste the path of the image file you would like to convert to ASCII art ' + boldText('(to Quit, type QUIT)') + ": ")
@@ -159,21 +164,30 @@ def main():
         # Uses imagePath, outputWidth, outputHeight to define the location and dimensions of the image
         asciiImg = convertImageToAscii(imagePath, outputWidth, outputHeight)
 
+        # If the asciiImg exists and is printed in the terminal
         if asciiImg:
             print()
+            print()
+            # Reminds the user which imagePath was printed to the terminal that corresponds with the image itself
             print(boldText(f'{imagePath}') + " successfully printed to terminal.")
+            
+            # While all of the conditions underneath are true... Give the user more options and keep looping through those options until each condition is satisfied
             while True:
+                # Gives the user the option to save the image to text file if they wish
                 saveToTextFile = input("\nWould you like to save the ASCII art to a text file? " + boldText('(Y/N)') + ": ").strip().lower()
+                # If user wants to save the text file and says 'y' (yes), save to text file.
                 if saveToTextFile in ['y' or 'yes']:
                     print()
                     saveAsciiToTextFile(asciiImg)
                     print()
                     break
+                # Or if they say 'n' (no) does not save the image to text file, reminds them that nothing was saved
                 elif saveToTextFile in ['n' or 'no']:
                     print()
                     print(boldText('ASCII art was not saved.'))
                     print()
                     break
+                # Otherwise, if nothing valid was entered, reminds the user they have to enter something valid
                 else:
                     print()
                     print('Please enter a valid response. ' + boldText('(Y/N)') + ': ')
