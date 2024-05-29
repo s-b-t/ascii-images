@@ -23,6 +23,8 @@ After you've received the greeting message/header, enter whatever image path you
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### A few important notes:
 
+-- The image being generated HAS to be located on your computer. The program only accepts image paths that are located in a directory. In other words, you cannot just simply type some random path name and hope an image will generate. Copying and pasting the image path name is by far the easiest method.
+
 -- To generate the BEST possible "resolution" of your text in the form of the image that you want, please feel free to change the font size of your terminal located in your terminal settings. The smaller the font, the more detail you will be shown per image that is generated.
 
 -- Ideally, you should also save a public/images folder to this project to make things easier. Then, you can drag and drop multiple images from another folder into this one. When the program prompts you to enter the image path to generate into ASCII art, you can then 'Copy Relative Path' right from your public/images folder and paste it into the prompt. This will also allow you to have the image files you may have liked using, right in your project. You can of course, just delete the ones that you may not like and that way your project always stores the images you liked generating into ASCII.
