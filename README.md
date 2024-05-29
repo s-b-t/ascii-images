@@ -17,3 +17,5 @@ Once you're there, type and enter the following command:
   MacOS: ```python3 main.py```
 
 Once you've received the greeting message/header, enter whatever image path you want and watch the magic happen!
+
+*Note:*  When you're given the option to save to a text (```.txt```) file of the art after generating, just know that I defaulted the program to save your file as a ```.txt``` file simply because ASCII is generated in text. There's other file extensions you can technically use, but not right now for this program. I will implement that feature eventually, but for now a ```.txt``` file serves its purpose perfectly fine.
