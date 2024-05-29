@@ -1,6 +1,6 @@
 ### B33FWare ASCII Image2Art Converter
 
-*Please Note: This program is still in its BETA/WIP stage.*
+*Please Note: This program is still in its BETA/WIP stage. I will continually be updating more functionality and features.*
 
 This program is meant to showcase how creative you can be right in your terminal. Each pixel of the user's desired image directly corresponds to an ASCII character and the program is designed to print out the exact representation of the desired image in ASCII characters.
 
