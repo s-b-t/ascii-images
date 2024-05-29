@@ -177,8 +177,6 @@ def main():
                 else:
                     print()
                     print('Please enter a valid response. ' + boldText('(Y/N)') + ': ')
-                    print()
 
 if __name__ == "__main__":
     main()
-    
