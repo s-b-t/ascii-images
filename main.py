@@ -160,11 +160,8 @@ def main():
         asciiImg = convertImageToAscii(imagePath, outputWidth, outputHeight)
 
         if asciiImg:
-            
             print()
             print(boldText(f'{imagePath}') + " successfully printed to terminal.")
-            # print()
-            
             while True:
                 saveToTextFile = input("\nWould you like to save the ASCII art to a text file? " + boldText('(Y/N)') + ": ").strip().lower()
                 if saveToTextFile in ['y' or 'yes']:
