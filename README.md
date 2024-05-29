@@ -2,7 +2,7 @@
 
 *Please Note: This program is still in its BETA/WIP stage.*
 
-First, go to your terminal and navigate (using 'list' ```ls```, 'change directory' ```cd```, and ```cd ..``` 'back one directory' commands) to a suitable directory where you can save this program to.
+First, go to your terminal and navigate (using 'list' ```ls```, 'change directory' ```cd```, and 'back one directory' ```cd ..``` commands) to a suitable directory where you can save this program to.
 
 When you're there, ```mkdir``` your folder name -- ```mkdir ascii-images``` is a suitable example.
 
