@@ -36,7 +36,7 @@ def displayByeMessage():
 def saveAsciiToTextFile(asciiImg):
     while True:
         # Allows user to input the file path name they wish to be saved
-        filePath = input('Enter the file name for your art to be saved under: ')
+        filePath = input('Enter the file name for your art to be saved under. You do not need to add the ' + italicText(boldText('.txt')) + ' extension: ')
     
         # If the filePath is empty, the program keeps asking the user to enter something
         if filePath == '':
@@ -135,12 +135,12 @@ def main():
     displayWelcomeMessage()
 
     # Allows user to continue with the program as intended after the infoText displays
-    input('Press ' + boldText("[Enter]") + ' or ' + boldText("[Return]") + ' to continue...\n')
+    input('Press ' + boldText("[Enter]") + ' or ' + boldText("[Return]") + ' to continue... \n')
 
     # While all of the conditions underneath are true... Give the user more options and keep looping through those options until each condition is satisfied
     while True:
         # Allows user input to enter any image file they wish, or QUIT out of the program
-        imagePath = input('Enter or paste the path of the image file you would like to convert to ASCII art ' + boldText('(to Quit, type QUIT)') + ": ")
+        imagePath = input('Enter or paste the path name of the image file you would like to convert to ASCII art ' + boldText('(to Quit, type QUIT)') + ": ")
         print()
 
         # If user decides to QUIT, Bye Message displays and exits the program
@@ -190,7 +190,7 @@ def main():
                 # Otherwise, if nothing valid was entered, reminds the user they have to enter something valid
                 else:
                     print()
-                    print('Please enter a valid response. ' + boldText('(Y/N)') + ': ')
+                    print(boldText('Please enter a valid response.'))
 
 if __name__ == "__main__":
     main()
