@@ -21,7 +21,7 @@ Once you've verified the ```pillow``` packages have finished installing, type an
 After you've received the greeting message/header, enter whatever image path you want and watch the magic happen!
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-### A few important notes:
+### Important Details Using About Using This Program:
 
 -- The image being generated HAS to be located on your computer. The program only accepts image paths that are located in a directory. In other words, you cannot just simply type some random path name and hope an image will generate. Copying and pasting the image path name is by far the easiest method.
 
