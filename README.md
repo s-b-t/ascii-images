@@ -1,6 +1,6 @@
 ### B33FWare ASCII Image2Art Converter
 
-*Please Note: This program is in its BETA/WIP stage.*
+*Please Note: This program is still in its BETA/WIP stage.*
 
 First, go to your terminal and navigate to a folder where you can ```mkdir``` a name you think is suitable to save for this program.
 
