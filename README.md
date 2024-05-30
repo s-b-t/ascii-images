@@ -1,4 +1,4 @@
-<p align="center">###B33FWare Image2ASCII Generator</p>
+<h1 align="center">B33FWare Image2ASCII Generator</h1>
 
 ![image](https://github.com/s-b-t/ascii-images/assets/109566542/c9453949-fed3-4067-913f-3b5186213d94)
 
