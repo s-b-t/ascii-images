@@ -1,5 +1,5 @@
 ### B33FWare ASCII Image2Art Converter
-![plot](![image](https://github.com/s-b-t/ascii-images/assets/109566542/c9453949-fed3-4067-913f-3b5186213d94)
+(![image](https://github.com/s-b-t/ascii-images/assets/109566542/c9453949-fed3-4067-913f-3b5186213d94)
 )
 *This program is still in its BETA/WIP stage. I will be updating more functionality and features continually.*
 
