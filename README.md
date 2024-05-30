@@ -1,5 +1,6 @@
 ### B33FWare ASCII Image2Art Converter
-![plot](public/B33FWare Assets/B33FWare.jpg
+![plot](![image](https://github.com/s-b-t/ascii-images/assets/109566542/c9453949-fed3-4067-913f-3b5186213d94)
+)
 *This program is still in its BETA/WIP stage. I will be updating more functionality and features continually.*
 
 This program is meant to showcase how creative you can be right in your terminal. In the logic of the program's design, each pixel of the user's desired image directly corresponds to an ASCII character and maps, scales, grayscales, and prints the exact ASCII representation of the desired image to the user's terminal.
