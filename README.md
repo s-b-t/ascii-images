@@ -1,5 +1,7 @@
 <h1 align="center">B33FWare Image2ASCII Converter</h1>
 
+To get started, navigate to ascii-art-converter in your terminal (assuming you've already imported the code and named your folder ascii-art-converter).
+
 *This program is still in its BETA/WIP stage. I will be updating more functionality and features continually.*
 
 This program is meant to showcase how creative you can be right in your terminal. In the logic of the program, each pixel of the user's desired image directly corresponds to an ASCII character. It maps, scales, grayscales, and prints the exact ASCII representation of the desired image to the user's terminal.
