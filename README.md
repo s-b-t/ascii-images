@@ -1,4 +1,4 @@
-<h1 align="center">B33FWare ASCII Image2Art Converter</h1>
+<h1 align="center">B33FWare Image2ASCII Converter</h1>
 
 *This program is still in its BETA/WIP stage. I will be updating more functionality and features continually.*
 
