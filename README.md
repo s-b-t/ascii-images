@@ -28,6 +28,8 @@ Change into the project directory:
 
 **Step 3: Install Required Libraries**
 
+The program requires the Pillow library (```PIL```) for image processing. Install it using ```pip```:
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Important Details About Using This Program:
 
