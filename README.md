@@ -36,6 +36,13 @@ If you're on MacOS or Linux you *may* need to use ```pip3``` instead:
 
 ```pip3 install pillow```
 
+**Step 4: Run the Program**
+
+1. Ensure your image file is in the project directory and provide the path to the image when the program prompts you to do so. (Easiest method is dragging your desired image into the folder provided in the project directory, then copying the image path via right-click or cmd-click)
+2. Run the program.
+
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Important Details About Using This Program:
 
