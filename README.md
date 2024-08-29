@@ -38,7 +38,7 @@ If you're on MacOS or Linux you *may* need to use ```pip3``` instead:
 
 **Step 4: Run the Program**
 
-1. Ensure your image file is in the project directory ```/user-public/user-images``` which will already be available to you after cloning.
+1. Ensure your image file is in the project directory ```user-public/user-images``` which will already be available to you after cloning.
 2. Run the program.
 
 Windows:
@@ -52,7 +52,7 @@ MacOS/Linux:
 **Step 5: Convert an Image to ASCII**
 
 1. After running the program, a greeting message will appear.
-2. Enter (or paste) the path to your image file when prompted to do so. (i.e. ```example.jpg``` or ```images/example.png```)
+2. Enter (or paste) the path to your image file when prompted to do so. (i.e. ```example.jpg``` or ```user-public/user-images/example.png```)
 3. The program will then generate and display the ASCII art in your terminal!
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
