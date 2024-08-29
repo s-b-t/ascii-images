@@ -53,7 +53,7 @@ MacOS/Linux:
 
 1. After running the program, a greeting message will appear.
 2. Press Enter to continue.
-3. Enter (or paste) the path to your image file when prompted to do so. (i.e. ```ascii-images/user-public/user-images/example.png```)
+3. Enter (or paste) the path to your image file when prompted to do so. (i.e. ```user-public/user-images/space-robot1.png```)
 4. The program will then generate and display the ASCII art in your terminal!
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
