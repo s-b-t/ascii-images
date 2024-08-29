@@ -4,11 +4,11 @@
 
 Welcome to the B33FWare Image2ASCII Converter! This program is designed to creatively convert images into ASCII art directly in your terminal. Each pixel in your desired image is mapped, scaled, and transformed into a corresponding ASCII character, resulting in a unique representation of your desired image.
 
-*Note: This program is currently in its BETA/WIP stage, and new features and improvements will be added eventually*
+*Note: This program is currently in its BETA/WIP stage, and new features and improvements will be added eventually.*
 
 ### Prerequisites
 
-Before getting started, ensure you have Python installed on your system. This program also requires the Pillow library (```PIL```) to handle image processing.
+Before getting started, ensure you have Python installed on your system. This program also requires the Pillow library (Python Image Library) aka ```PIL``` to handle image processing.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Important Details About Using This Program:
