@@ -1,26 +1,6 @@
 <h1 align="center">B33FWare Image2ASCII Converter</h1>
 
-To get started, navigate to ascii-art-converter in your terminal (assuming you've already imported the code and named your folder ascii-art-converter).
 
-*This program is still in its BETA/WIP stage. I will be updating more functionality and features continually.*
-
-This program is meant to showcase how creative you can be right in your terminal. In the logic of the program, each pixel of the user's desired image directly corresponds to an ASCII character. It maps, scales, grayscales, and prints the exact ASCII representation of the desired image to the user's terminal.
-
-First, go to your terminal and navigate to a suitable directory where you can save this program to (using 'list' ```ls```, 'change directory' ```cd```, and 'back one directory' ```cd ..``` commands).
-
-When you're there, ```mkdir``` your folder name -- ```mkdir ascii-images``` is a suitable example.
-
-While still in your terminal and the ```ascii-images``` folder being present on your command line, install Pillow. To do this, type ```pip install pillow``` and press Enter.
-
-```PIL``` aka ```pillow``` is used to assist the program in generating images to ASCII characters.
-
-Once you've verified the ```pillow``` packages have finished installing, type and enter the following command to your ```ascii-images``` project folder:
-  
-  Windows: ```python main.py```
-  
-  MacOS: ```python3 main.py```
-
-After you've received the greeting message/header, enter whatever image path you want (as long as it's located in your project) and watch the magic happen!
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Important Details About Using This Program:
