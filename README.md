@@ -10,7 +10,10 @@ Welcome to the B33FWare Image2ASCII Converter! This program is designed to creat
 
 Before getting started, ensure you have Python installed on your system. This program also requires the Pillow library (Python Image Library) aka ```PIL``` to handle image processing.
 
-**Step 1: Create Your Project Directory**
+### Getting Started
+
+**Step 1: Clone the Repository**
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Important Details About Using This Program:
