@@ -18,6 +18,16 @@ First, you'll need to clone this repository to your local machine. Open your ter
 
 ```git clone https://github.com/s-b-t/ascii-images.git```
 
+This will create a directory named ```ascii-images``` containing the project files.
+
+**Step 2: Navigate to the Project Directory**
+
+Change into the project directory:
+
+```cd ascii-images```
+
+**Step 3: Install Required Libraries**
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Important Details About Using This Program:
 
