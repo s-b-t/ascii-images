@@ -15,6 +15,7 @@ Before getting started, ensure you have Python installed on your system. This pr
 **Step 1: Clone the Repository**
 
 First, you'll need to clone this repository to your local machine. Open your terminal and run the following command:
+
 ```git clone https://github.com/s-b-t/ascii-images.git```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
