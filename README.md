@@ -49,7 +49,7 @@ MacOS/Linux:
 
 ```python3 main.py```
 
-**Step 5: Convert an image to ASCII**
+**Step 5: Convert an Image to ASCII**
 
 1. After running the program, a greeting message will appear.
 2. Enter (or paste) the path to your image file when prompted to do so. (i.e. ```example.jpg``` or ```images/example.png```)
