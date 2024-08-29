@@ -30,6 +30,12 @@ Change into the project directory:
 
 The program requires the Pillow library (```PIL```) for image processing. Install it using ```pip```:
 
+```pip install pillow```
+
+If you're on MacOS or Linux you *may* need to use ```pip3``` instead:
+
+```pip3 install pillow```
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Important Details About Using This Program:
 
