@@ -38,8 +38,8 @@ If you're on MacOS or Linux you *may* need to use ```pip3``` instead:
 
 **Step 4: Run the Program**
 
-1. Ensure your image file is in the project directory. -- *(Easiest method is dragging your desired image into the folder provided in the project directory, then copying the image path via right-click or control-click)*
-2. Run the program and provide the path to the image when the program prompts you to do so.
+1. Ensure your image file is in the project directory -- ```user-public/user-images```.
+2. Run the program.
 
 
 
