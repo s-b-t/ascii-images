@@ -38,7 +38,7 @@ If you're on MacOS or Linux you *may* need to use ```pip3``` instead:
 
 **Step 4: Run the Program**
 
-1. Ensure your image file is in the project directory -- ```user-public/user-images```.
+1. Ensure your image file is in the project directory ```/user-public/user-images``` which will already be available to you after cloning.
 2. Run the program.
 
 
