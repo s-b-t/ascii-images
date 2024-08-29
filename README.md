@@ -57,7 +57,7 @@ MacOS/Linux:
 4. The program will then generate and display the ASCII art in your terminal!
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Important Details About Using This Program:
+### Important Details About Using This Program
 
 -- The image being generated HAS to be located in the main project folder for this program. In other words, you cannot just simply type some random image path name or grab another image path name from 'Pictures', 'Documents', or even the Internet and hope the image will generate. I will eventually implement the user being able to choose from any image path off their computer or potentially allowing image URLs from the internet.
 
