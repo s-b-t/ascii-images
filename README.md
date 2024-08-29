@@ -2,7 +2,9 @@
 
 ### Introduction
 
-Welcome to the B33FWare Image2ASCII Converter! This program is designed to creatively convert images into ASCII art directly in your terminal. Each pixel in your desired image is mapped, scaled, and transformed into a corresponding ASCII character, resulting in a unique representation of your desired image.  
+Welcome to the B33FWare Image2ASCII Converter! This program is designed to creatively convert images into ASCII art directly in your terminal. Each pixel in your desired image is mapped, scaled, and transformed into a corresponding ASCII character, resulting in a unique representation of your desired image.
+
+*Note: This program is currently in its BETA/WIP stage, and new features and improvements will be added eventually*
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Important Details About Using This Program:
