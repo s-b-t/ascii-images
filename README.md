@@ -8,12 +8,14 @@ Welcome to the B33FWare Image2ASCII Converter! This program is designed to creat
 
 ### Prerequisites
 
-Before getting started, ensure you have Python installed on your system. This program also requires the Pillow library (Python Image Library) aka ```PIL``` to handle image processing.
+Before getting started, ensure you have Python installed on your system. This program will also require the Pillow library (Python Image Library) aka ```PIL``` to handle image processing.
 
 ### Getting Started
 
 **Step 1: Clone the Repository**
 
+First, you'll need to clone this repository to your local machine. Open your terminal and run the following command:
+```git clone https://github.com/s-b-t/ascii-images.git```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Important Details About Using This Program:
